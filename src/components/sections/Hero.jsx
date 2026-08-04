@@ -12,7 +12,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="bg-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden"
+      className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 overflow-hidden bg-gradient-to-b from-slate-50/50 to-white"
     >
       <div className="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="md:col-span-7 flex flex-col text-left items-start">
