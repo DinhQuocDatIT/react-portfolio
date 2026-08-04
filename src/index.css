@@ -1,4 +1,19 @@
 @import "tailwindcss";
 @theme {
   --color-primary: #4f39f6;
+  --color-primary-hover: #432dd7;
+}
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
 }

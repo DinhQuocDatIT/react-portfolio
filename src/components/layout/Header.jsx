@@ -1,5 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import avatar from "../../assets/avatar.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 const sections = [
   { id: "hero", label: "Trang chủ" },
   { id: "about", label: "Giới thiệu" },
@@ -34,7 +37,7 @@ function Header({ activeSection, isMenuOpen, toggleMenu }) {
             return (
               <button
                 key={sect.id}
-                className={`px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all duration-205 ${
+                className={` cursor-pointer px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all duration-205 ${
                   activeSection === sect.id
                     ? "text-primary bg-indigo-50/50"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
@@ -48,10 +51,14 @@ function Header({ activeSection, isMenuOpen, toggleMenu }) {
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="p-2 text-slate-600 hover:text-slate-950 focus:outline-none"
+            className=" cursor-pointer p-2 text-slate-600 hover:text-slate-950 focus:outline-none"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? "X" : "="}
+            {isMenuOpen ? (
+              <FontAwesomeIcon icon={faClose} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
           </button>
         </div>
       </div>
@@ -68,7 +75,7 @@ function Header({ activeSection, isMenuOpen, toggleMenu }) {
               {sections.map((sect) => (
                 <button
                   key={sect.id}
-                  className={` w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all 
+                  className={`cursor-pointer w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all 
                     ${
                       activeSection === sect.id
                         ? "text-primary bg-indigo-50/50"
