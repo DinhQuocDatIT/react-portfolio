@@ -6,6 +6,9 @@ import Education from "./components/sections/Education";
 import { sections } from "./constants/sections";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
+import Achievements from "./components/sections/Achievements";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -53,7 +56,10 @@ function App() {
         <Education />
         <Skills />
         <Projects />
+        <Achievements />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
