@@ -36,9 +36,16 @@ function App() {
   }, []);
   const scrollTo = (id) => {
     const el = document.getElementById(id);
+
     if (el) {
-      setActiveSection(id);
-      el.scrollIntoView({ behavior: "smooth" });
+      const headerHeight = 64;
+      const elementPosition = el.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+
       setIsMenuOpen(false);
     }
   };
@@ -51,7 +58,7 @@ function App() {
         handleScrollTo={scrollTo}
       />
       <main className="pt-16 max-w-6xl mx-auto">
-        <Hero />
+        <Hero handleScrollTo={scrollTo} />
         <AboutMe />
         <Education />
         <Skills />

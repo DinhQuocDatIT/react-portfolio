@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { profile } from "../../constants/profile";
 
 function Footer() {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -24,7 +25,7 @@ function Footer() {
 
         <div className="flex items-center gap-4 text-xs font-medium text-slate-500">
           <a
-            href="https://github.com/DinhQuocDatIT"
+            href={profile.github}
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary transition-colors"

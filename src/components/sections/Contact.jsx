@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { profile } from "../../constants/profile";
 function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const handleCopyEmail = () => {
@@ -48,7 +49,7 @@ function Contact() {
                       onClick={handleCopyEmail}
                       className="text-[13px] font-semibold text-slate-700 hover:text-primary transition-colors flex items-center gap-1.5"
                     >
-                      dinhquocdat2005thdgli@gmail.com
+                      {profile.email}
                       {copiedEmail ? (
                         <span className="text-[10px] text-emerald-600 bg-emerald-50 px-1 rounded flex items-center gap-0.5">
                           <FontAwesomeIcon
@@ -71,12 +72,12 @@ function Contact() {
                       Github
                     </p>
                     <a
-                      href="https://github.com/DinhQuocDatIT"
+                      href={profile.github}
                       target="_blank"
                       rel="noreferrer"
                       className="text-[13px] font-semibold text-slate-700 hover:text-primary transition-colors"
                     >
-                      github.com/DinhQuocDatIT
+                      {profile.github}
                     </a>
                   </div>
                 </div>
@@ -90,7 +91,7 @@ function Contact() {
                       Địa điểm
                     </p>
                     <p className="text-[13px] font-semibold text-slate-700">
-                      Thành phố Hồ Chí Minh, Việt Nam
+                      {profile.location}
                     </p>
                   </div>
                 </div>
@@ -116,7 +117,7 @@ function Contact() {
 
             <div className="flex flex-wrap gap-2.5 mt-8">
               <a
-                href="https://github.com/DinhQuocDatIT"
+                href={profile.github}
                 target="_blank"
                 rel="noreferrer"
                 className="px-4 py-2 bg-slate-900 hover:bg-slate-850 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5 transition-colors"
@@ -125,7 +126,8 @@ function Contact() {
                 GitHub
               </a>
               <a
-                href="/DinhQuocDat_Frontend_Intern_CV.pdf"
+                href="/Frontend_Intern_DinhQuocDat_CV.pdf"
+                target="_blank"
                 className="px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition-colors"
               >
                 <FontAwesomeIcon icon={faFileDownload} />

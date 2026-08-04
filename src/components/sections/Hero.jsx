@@ -6,9 +6,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { span } from "framer-motion/client";
-import heroimg from "../../assets/heroimg.png";
+
 import { faReact } from "@fortawesome/free-brands-svg-icons";
-function Hero() {
+import { profile } from "../../constants/profile";
+import { heroimg } from "../../assets";
+function Hero({ handleScrollTo }) {
   return (
     <section
       id="hero"
@@ -17,7 +19,7 @@ function Hero() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         <div className="md:col-span-7 flex flex-col text-left items-start">
           <h2 className="text-slate-900 text-4xl md:text-5xl  font-bold tracking-tight leading-[1.15] mb-4">
-            Đinh Quốc Đạt
+            {profile.name}
           </h2>
           <span className="text-primary text-lg md:text-xl mb-6 font-semibold">
             Sinh viên công nghệ thông tin
@@ -43,7 +45,10 @@ function Hero() {
             ))}
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <button className="cursor-pointer px-6 py-3 bg-primary hover:bg-primary-hover text-white font-semibold text-[14px] rounded-xl transition-all duration-200 shadow-indigo-100 flex items-center gap-1.5 group">
+            <button
+              onClick={() => handleScrollTo("projects")}
+              className="cursor-pointer px-6 py-3 bg-primary hover:bg-primary-hover text-white font-semibold text-[14px] rounded-xl transition-all duration-200 shadow-indigo-100 flex items-center gap-1.5 group"
+            >
               Xem dự án{" "}
               <FontAwesomeIcon
                 icon={faArrowRight}
@@ -51,7 +56,8 @@ function Hero() {
               />
             </button>
             <a
-              href="/DinhQuocDat_Frontend_Intern_CV.pdf"
+              href="/Frontend_Intern_DinhQuocDat_CV.pdf"
+              target="_blank"
               className=" cursor-pointer px-6 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl hover:bg-slate-50 transition-all"
             >
               <FontAwesomeIcon

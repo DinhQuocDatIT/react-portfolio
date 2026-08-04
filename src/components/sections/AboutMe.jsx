@@ -49,8 +49,9 @@ function AboutMe() {
           </h2>
           <p className="text-[16px] md:text-[17px] text-slate-650 leading-relaxed max-w-3xl mx-auto mb-16">
             Mình là sinh viên Công nghệ thông tin với niềm đam mê phát triển
-            phần mềm. Mình tập trung tìm hiểu về phát triển web, đặc biệt là
-            Frontend Development với ReactJS và các công nghệ hiện đại.
+            phần mềm. Mình tập trung xây dựng các sản phẩm công nghệ, tìm hiểu
+            những công nghệ hiện đại và không ngừng cải thiện kỹ năng để tạo ra
+            những sản phẩm có tính ứng dụng thực tế.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">

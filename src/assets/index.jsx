@@ -1,5 +1,5 @@
-import uth from "./uth_1.png";
 import studyflow from "./studyflow.png";
 import todocloud from "./todocloud.png";
-import uthhub from "./uthhub.png";
-export { uth, studyflow, todocloud, uthhub };
+import avatar from "./avatar.jpg";
+import heroimg from "./heroimg.png";
+export { studyflow, todocloud, avatar, heroimg };

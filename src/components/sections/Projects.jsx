@@ -4,49 +4,47 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { studyflow, todocloud, uthhub } from "../../assets";
+import { studyflow, todocloud } from "../../assets";
 
 const projects = [
   {
     id: 1,
-    name: "TODO CLOUD",
-    type: "TEAM PROJECT (FULL-STACK)",
-    description:
-      "Hệ thống quản lý công việc full-stack nâng cao, triển khai kiến trúc Controller-Service-Repository tách biệt, hỗ trợ bảo mật và triển khai đám mây.",
-    tech: "React + Spring Boot + MySQL",
-
-    features: [
-      "Full-stack Integration",
-      "RESTful APIs",
-      "Spring Security JWT",
-      "Database design & JPA",
-      "Docker Containerization",
-      "GCP Cloud Deployment",
-    ],
-    sourceCodeUrl: "https://github.com/vctanngoc09/todo-cloud",
-    liveDemoUrl: "",
-    imageUrl: todocloud,
-    deploymentPlatform: "Google Cloud Platform",
-  },
-  {
-    id: 2,
     name: "STUDYFLOW",
     type: "PERSONAL PROJECT",
     description:
-      "Ứng dụng quản lý học tập giúp người dùng theo dõi kế hoạch học tập, tiến độ và công việc một cách trực quan, tối ưu hóa thời gian tự học.",
+      "Ứng dụng Single Page Application (SPA) hỗ trợ quản lý quy trình học tập cá nhân toàn diện. Hệ thống giúp người dùng lập kế hoạch, phân bổ công việc theo khung thời gian, theo dõi tiến độ bằng biểu đồ trực quan và tối ưu hiệu suất tự học thông qua giao diện tương tác thời gian thực.",
     tech: "ReactJS + CSS Modules",
     features: [
-      "Component-based Architecture",
-      "React Hooks (useState, useEffect)",
-      "React Router DOM",
-      "Dashboard Analytics",
-      "Progress Tracking",
-      "Responsive UI",
+      "Kiến trúc Component-based linh hoạt",
+      "Quản lý State & Lifecycle với React Hooks",
+      "Định tuyến mượt mà (React Router DOM)",
+      "Dashboard Analytics trực quan",
+      "Giao diện chuẩn Responsive UI",
+      "Tối ưu CSS với Modular CSS",
     ],
     sourceCodeUrl: "https://github.com/DinhQuocDatIT/study-planner",
     liveDemoUrl: "",
     imageUrl: studyflow,
     deploymentPlatform: "",
+  },
+  {
+    id: 2,
+    name: "TODO CLOUD",
+    type: "TEAM PROJECT (FULL-STACK)",
+    description:
+      "Hệ thống quản lý công việc và dự án full-stack nâng cao. Xây dựng theo kiến trúc phân tầng (Controller - Service - Repository) giúp tách biệt rõ ràng giữa xử lý logic và truy xuất dữ liệu. Hệ thống được đóng gói hoàn toàn bằng Docker container và tự động hóa triển khai trên hạ tầng điện toán đám mây Google Cloud Platform (GCP).",
+    tech: "ReactJS + Spring Boot + MySQL + Docker",
+    features: [
+      "Tích hợp Full-stack (ReactJS & Spring Boot REST APIs)",
+      "Bảo mật Stateless (Spring Security & JWT)",
+      "Tối ưu CSDL với Spring Data JPA / Hibernate",
+      "Đóng gói Docker Containers (Multi-stage build)",
+      "Triển khai Cloud trên GCP (Compute Engine / Cloud Run)",
+    ],
+    sourceCodeUrl: "https://github.com/vctanngoc09/todo-cloud",
+    liveDemoUrl: "",
+    imageUrl: todocloud,
+    deploymentPlatform: "Google Cloud Platform (GCP) & Docker Container",
   },
 ];
 function Projects() {

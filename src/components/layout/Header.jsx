@@ -1,27 +1,28 @@
 import { AnimatePresence, motion } from "framer-motion";
-import avatar from "../../assets/avatar.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 import { sections } from "../../constants/sections";
+import { profile } from "../../constants/profile";
+import { avatar } from "../../assets";
 
 function Header({ activeSection, isMenuOpen, toggleMenu, handleScrollTo }) {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div
-          className="flex items-center justify-between gap-2.5 cursor-pointer"
+          className="flex items-center justify-between gap-3 cursor-pointer"
           onClick={() => handleScrollTo("hero")}
         >
           <img
-            className="w-14 h-14 rounded-full object-cover shadow-lg"
+            className="w-14 h-14 rounded-full object-cover shadow-lg ring-2 ring-white [image-rendering:-webkit-optimize-contrast]"
             src={avatar}
             alt="avatar"
           />
-
           <div className="flex flex-col">
             <span className="font-bold text-slate-900 tracking-wide uppercase ">
-              Đinh Quốc Đạt
+              {profile.name}
             </span>
             <span className="text-[10px] text-slate-500 font-medium tracking-wider uppercase">
               Software Developer
