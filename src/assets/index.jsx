@@ -1,2 +1,5 @@
 import uth from "./uth_1.png";
-export { uth };
+import studyflow from "./studyflow.png";
+import todocloud from "./todocloud.png";
+import uthhub from "./uthhub.png";
+export { uth, studyflow, todocloud, uthhub };

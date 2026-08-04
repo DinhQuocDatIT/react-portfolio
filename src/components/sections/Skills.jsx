@@ -5,9 +5,7 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Frontend Development",
-    icon: (
-      <FontAwesomeIcon icon={faVuejs} className="w-5 h-5 text-indigo-600" />
-    ),
+    icon: <FontAwesomeIcon icon={faVuejs} className="w-5 h-5 text-primary" />,
     skills: [
       { name: "ReactJS", level: "Thành thạo" },
       { name: "JavaScript (ES6+)", level: "Thành thạo" },
@@ -19,7 +17,7 @@ const skillCategories = [
   },
   {
     title: "Backend Development",
-    icon: <FontAwesomeIcon icon={faCode} className="w-5 h-5 text-indigo-600" />,
+    icon: <FontAwesomeIcon icon={faCode} className="w-5 h-5 text-primary" />,
     skills: [
       { name: "Java", level: "Thành thạo" },
       { name: "Spring Boot", level: "Thành thạo" },
@@ -31,7 +29,7 @@ const skillCategories = [
   {
     title: "Database Management",
     icon: (
-      <FontAwesomeIcon icon={faDatabase} className="w-5 h-5 text-indigo-600" />
+      <FontAwesomeIcon icon={faDatabase} className="w-5 h-5 text-primary" />
     ),
     skills: [
       { name: "MySQL", level: "Cơ bản" },
@@ -40,9 +38,7 @@ const skillCategories = [
   },
   {
     title: "Tools & Infrastructure",
-    icon: (
-      <FontAwesomeIcon icon={faTools} className="w-5 h-5 text-indigo-600" />
-    ),
+    icon: <FontAwesomeIcon icon={faTools} className="w-5 h-5 text-primary" />,
     skills: [
       { name: "Git & GitHub", level: "Thành thạo" },
       { name: "Docker", level: "Thành thạo" },
@@ -60,7 +56,7 @@ function Skills() {
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-xs font-bold text-indigo-600 uppercase tracking-widest block mb-2">
+          <span className="text-xs font-bold text-primary uppercase tracking-widest block mb-2">
             Kỹ năng
           </span>
           <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
