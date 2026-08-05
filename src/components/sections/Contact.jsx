@@ -126,7 +126,7 @@ function Contact() {
                 GitHub
               </a>
               <a
-                href="/Frontend_Intern_DinhQuocDat_CV.pdf"
+                href="/DinhQuocDat_Frontend_Intern_CV.pdf"
                 target="_blank"
                 className="px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition-colors"
               >

@@ -63,12 +63,7 @@ function Header({ activeSection, isMenuOpen, toggleMenu, handleScrollTo }) {
 
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-slate-100 overflow-hidden"
-          >
+          <div className="md:hidden bg-white border-slate-100 overflow-hidden">
             <div className="px-6 py-4 flex flex-col gap-2.5">
               {sections.map((sect) => (
                 <button
@@ -85,7 +80,7 @@ function Header({ activeSection, isMenuOpen, toggleMenu, handleScrollTo }) {
                 </button>
               ))}
             </div>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </header>

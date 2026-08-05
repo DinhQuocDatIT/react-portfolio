@@ -16,7 +16,7 @@ function Hero({ handleScrollTo }) {
       id="hero"
       className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-6 overflow-hidden bg-gradient-to-b from-slate-50/50 to-white"
     >
-      <div className="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="md:col-span-7 flex flex-col text-left items-start">
           <h2 className="text-slate-900 text-4xl md:text-5xl  font-bold tracking-tight leading-[1.15] mb-4">
             {profile.name}
@@ -56,7 +56,7 @@ function Hero({ handleScrollTo }) {
               />
             </button>
             <a
-              href="/Frontend_Intern_DinhQuocDat_CV.pdf"
+              href="/DinhQuocDat_Frontend_Intern_CV.pdf"
               target="_blank"
               className=" cursor-pointer px-6 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl hover:bg-slate-50 transition-all"
             >
@@ -69,7 +69,7 @@ function Hero({ handleScrollTo }) {
           </div>
         </div>
         <div className="group  relative border border-slate-200 p-2 rounded-3xl shadow-lg shadow-slate-100">
-          <span className="  hidden md:flex absolute bottom-6 -left-8 bg-white border border-slate-200 rounded-[6px] px-2 py-1 text-slate-900 font-semibold flex items-center gap-1 animate-floating">
+          <span className=" md:flex absolute bottom-6 -left-8 bg-white border border-slate-200 rounded-[6px] px-2 py-1 text-slate-900 font-semibold flex items-center gap-1 animate-floating">
             <FontAwesomeIcon
               icon={faReact}
               className="text-[#61DBFB] text-[20px]"
