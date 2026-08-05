@@ -47,9 +47,9 @@ function Education() {
               </h4>
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl font-extrabold text-slate-950">
-                  3.59
+                  8.3
                 </span>
-                <span className="text-slate-500 text-sm">/ 4</span>
+                <span className="text-slate-500 text-sm">/ 10</span>
               </div>
             </div>
 
